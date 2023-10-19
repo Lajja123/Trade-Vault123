@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import ConnectButtonCustom from "../ConnectButton/ConnectButtonCustom";
 import "../navbar/Navbar.css";
 
 function Navbar() {
@@ -131,8 +131,8 @@ function Navbar() {
                 sx={{
                   margin: 2,
                   color: "rgb(168 172 209 / var(--tw-text-opacity))",
-                  display: "block",
                   "--tw-text-opacity": 1,
+                  display: "block",
                 }}
               >
                 Overview
@@ -165,7 +165,7 @@ function Navbar() {
               </Button>
             </NavLink>
           </Box>
-          <ConnectButton />
+          <ConnectButtonCustom />
           <Box sx={{ flexGrow: 0 }}>
             <Menu> </Menu>
           </Box>
